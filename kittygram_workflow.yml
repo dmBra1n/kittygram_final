@@ -150,7 +150,6 @@ jobs:
           with:
             context: ./nginx/
             push: true
-            # Тут вместо username должен быть ваш логин на Docker Hub
             tags: dmbra1n/kittygram_gateway:latest
 
   deploy:
