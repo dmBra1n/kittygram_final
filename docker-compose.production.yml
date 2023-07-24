@@ -7,27 +7,27 @@ volumes:
 
 services:
   db:
-    container_name: postgres
+    container_name: postgres_prod
     image: postgres:13
     env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
-    container_name: backend
+    container_name: backend_prod
     image: dmbra1n/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static
+      - static:/backend_static
       - media:/media
   frontend:
-    container_name: frontend
+    container_name: frontend_prod
     env_file: .env
     image: dmbra1n/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
-    container_name: nginx
+    container_name: nginx_prod
     image: dmbra1n/kittygram_gateway
     env_file: .env
     ports:
