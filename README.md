@@ -8,31 +8,30 @@ Kittygram — социальная сеть для обмена фотограф
 Проект состоит из бэкенд-приложения на Django и фронтенд-приложения на React.
 
 Приложение позволяет: 
-- зарегистрироваться и авторизоваться пользователю
-- добавить нового котика на сайт или изменить существующего
-- посмотреть записи других пользователей
+- зарегистрироваться и авторизоваться пользователю;
+- добавить нового котика на сайт или изменить существующего;
+- посмотреть записи других пользователей.
 
 Проект написан в рамках учебного курса "Python-разработчик" от Yandex.Practicum.<br>
 Основные задачи бали: 
-- развернуть фронтэнд и бэкэнд на облачном сервере используя Docker
-- настроить автоматизацию деплоя CI/CD
+- развернуть fronend и backend на облачном сервере используя Docker;
+- настроить автоматизацию деплоя CI&CD.
 
-## Технологии
-- Python
-- Django
-- Django REST Framework
-- Simple JWT
-- Gunicorn 20.1.0
-- React (фронтенд-приложение)
-- Docker
-- CI/CD
-- GitHub Actions
+#### Инструменты и стек:
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=flat-square&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) 
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=flat-square&logo=nginx&logoColor=white) <br>
+![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=flat-square&logo=gunicorn&logoColor=white) 
+![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens)
+![Actions GitHub](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white)
+
 
 ## Локальный запуск проекта
 1. Склонировать репозиторий
 2. В корне проекта создать и прописать файл _.env_
   
-    ```
+    ```env
     POSTGRES_USER=<имя_пользователя_БД>
     POSTGRES_PASSWORD=<пароль_БД>
     POSTGRES_DB=<имя_БД>
