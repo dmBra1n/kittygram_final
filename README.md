@@ -43,7 +43,7 @@ Kittygram — социальная сеть для обмена фотограф
 3. В теменале, в корне проекта выполнить команду `docker compose up -d`
 4. Вполнить миграции и собрать статику:
      ```
-     docker exec backend python manage.py migrate
+     docker compose exec backend python manage.py migrate
      docker compose exec backend python manage.py collectstatic
      docker compose exec backend cp -r /app/collected_static/. /backend_static/static/  
      ```
